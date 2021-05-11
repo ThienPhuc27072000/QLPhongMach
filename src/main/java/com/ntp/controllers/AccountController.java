@@ -1,6 +1,8 @@
 package com.ntp.controllers;
 
+import com.cloudinary.utils.ObjectUtils;
 import com.ntp.models.BacSi;
+import com.ntp.models.BenhNhan;
 import com.ntp.models.TaiKhoan;
 import com.ntp.service.IBacSiService;
 import com.ntp.service.INhanVienService;
@@ -10,8 +12,15 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.validation.Valid;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
 
 @Controller
 @ControllerAdvice
@@ -32,7 +41,23 @@ public class AccountController {
     @RequestMapping()
     public String account(ModelMap model) {
 //        System.out.println(cryptPasswordEncoder.encode("123"));
-        model.addAttribute("accounts", iTaiKhoanService.getAll(TaiKhoan.class));
+        model.addAttribute("account", iTaiKhoanService.getAll(TaiKhoan.class));
         return "accounts";
     }
+
+    @GetMapping("/add-account")
+    public String addAccount(Model model) {
+        model.addAttribute("account", new TaiKhoan());
+        return "add-account";
+    }
+
+    @PostMapping("/add-account")
+    public String addAccountPost(@ModelAttribute("account")TaiKhoan taiKhoan) {
+        taiKhoan.setId(UUID.randomUUID().toString());
+        TaiKhoan t = iTaiKhoanService.insert(taiKhoan);
+        if (t != null)
+            return "redirect:/accounts/";
+        return "add-account";
+    }
+
 }

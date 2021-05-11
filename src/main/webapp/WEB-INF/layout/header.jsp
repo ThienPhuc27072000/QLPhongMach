@@ -19,7 +19,7 @@
                         <p class="bold text-right" style="">
                             <a style="" href="/taikhoan/login">
                                 <i class="fas fa-sign-in-alt"></i>
-                                <b>Đăng nhập</b>
+                                <b>Login Admin</b>
                             </a>
                         </p>
                     </c:when>
@@ -37,7 +37,7 @@
                                 <span class="icontop">
                                     <i class="fas fa-tasks" aria-hidden="true" style="margin-top: 4px"></i>
                                 </span>
-                                <span class="iconcont">Quản lí phòng mạch</span>
+                                <span class="iconcont">Clinic Management</span>
                             </a>
                         </div>
                         <div class="info-inner">
@@ -45,7 +45,7 @@
                                 <span class="icontop">
                                     <i class="fas fa-sign-out-alt" aria-hidden="true" style="margin-top: 4px"></i>
                                 </span>
-                                <span class="iconcont">Đăng xuất</span>
+                                <span class="iconcont">Logout</span>
                             </a>
                         </div>
                     </c:when>
@@ -88,45 +88,3 @@
     </div>
 </div>
 
-<%--                <div class="info-inner">--%>
-<%--                    <b>${pageContext.request.userPrincipal.name}</b>--%>
-<%--                    <b><a href="/logout">Đăng xuất</a></b>--%>
-<%--                </div>--%>
-
-<%--                <div class="info-inner">--%>
-<%--                    <span class="icontop"><img src="<c:url value = "/images/phone-icon.png" />" alt="#"></span>--%>
-<%--                    <span class="iconcont"><a href="tel:800 123 456">800 123 456</a></span>--%>
-<%--                </div>--%>
-<%--                <div class="info-inner">--%>
-<%--                    <span class="icontop"><i class="fa fa-envelope" aria-hidden="true"></i></span>--%>
-<%--                    <span class="iconcont"><a data-scroll href="mailto:info@yoursite.com">info@Lifecare.com</a></span>--%>
-<%--                </div>--%>
-<%--                <div class="info-inner">--%>
-<%--                    <span class="icontop"><i class="fa fa-clock-o" aria-hidden="true"></i></span>--%>
-<%--                    <span class="iconcont"><a data-scroll href="#">Daily: 7:00am - 8:00pm</a></span>--%>
-<%--                </div>--%>
-
-<%--                        <p class="bold text-right" style="">--%>
-<%--                            <i class="far fa-user"></i>--%>
-<%--                            <span style="">${pageContext.request.userPrincipal.name}</span>--%>
-<%--                        </p>--%>
-<%--                        <div class="sub-content">--%>
-<%--                            <ul>--%>
-<%--                                <a href="#">--%>
-<%--                                    <i class="fa fa-user"></i>--%>
-<%--                                    <span style="">Xem thông tin</span>--%>
-<%--                                </a>--%>
-<%--                                <sec:authorize access="hasAnyRole('ROLE_ADMIN')">--%>
-<%--                                    <a href="/admin" target="_blank">--%>
-<%--                                        <li>--%>
-<%--                                            <i class="fas fa-tasks"></i>--%>
-<%--                                            <span>Quản lí phòng mạch</span>--%>
-<%--                                        </li>--%>
-<%--                                    </a>--%>
-<%--                                </sec:authorize>--%>
-<%--                                <a href="/logout">--%>
-<%--                                    <li><i class="fas fa-sign-out-alt"></i></li>--%>
-<%--                                    <span style="">Đăng xuất</span>--%>
-<%--                                </a>--%>
-<%--                            </ul>--%>
-<%--                        </div>--%>

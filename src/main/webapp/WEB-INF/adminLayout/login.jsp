@@ -38,14 +38,25 @@
                     <br/>
                     <img src="<c:url value= "/resourceAdmin/plugins/images/eliteadmin-text-dark.png"/>" alt="Home" />
                 </a>
+                <c:if test="${param.error != null}">
+                    <div style="color: red; margin: 50px 0 -15px 0">
+                        Sign in name or invalid password!
+                    </div>
+                </c:if>
+                <c:if test="${param.accessDenied != null}">
+                    <div style="color: red; margin: 50px 0 -15px 0">
+                        You can not access this page!
+                    </div>
+                </c:if>
+                <br/>
                 <div class="form-group">
                     <div class="col-xs-12">
-                        <input name="username" id="usernameId" class="form-control" type="text" required="" placeholder="Tên đăng nhập">
+                        <input name="username" id="usernameId" class="form-control" type="text" required="" placeholder="Username">
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-xs-12">
-                        <input name="password" id="passwordId" class="form-control" type="password" required="" placeholder="Mật khẩu">
+                        <input name="password" id="passwordId" class="form-control" type="password" required="" placeholder="Password">
                     </div>
                 </div>
                 <div class="form-group">

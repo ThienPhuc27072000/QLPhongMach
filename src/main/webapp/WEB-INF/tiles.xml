@@ -176,4 +176,31 @@
         <put-attribute name="content" value="/WEB-INF/adminLayout/edit-medicine.jsp" />
     </definition>
 
+<!-- Toa thuốc -->
+    <definition name="prescriptions" extends="adminBaseLayout">
+        <put-attribute name="title" value="danh sách toa thuốc"/>
+        <put-attribute name="content" value="/WEB-INF/adminLayout/prescriptions.jsp" />
+    </definition>
+
+    <definition name="add-prescription" extends="adminBaseLayout">
+        <put-attribute name="title" value="thêm toa thuốc"/>
+        <put-attribute name="content" value="/WEB-INF/adminLayout/add-prescription.jsp" />
+    </definition>
+
+    <definition name="details-prescription" extends="adminBaseLayout">
+        <put-attribute name="title" value="chi tiết toa thuốc"/>
+        <put-attribute name="content" value="/WEB-INF/adminLayout/details-prescription.jsp" />
+    </definition>
+
+<!-- Tài khoản -->
+    <definition name="accounts" extends="adminBaseLayout">
+        <put-attribute name="title" value="danh sách tai khoản"/>
+        <put-attribute name="content" value="/WEB-INF/adminLayout/accounts.jsp" />
+    </definition>
+
+    <definition name="add-account" extends="adminBaseLayout">
+        <put-attribute name="title" value="thêm tài khoản"/>
+        <put-attribute name="content" value="/WEB-INF/adminLayout/add-account.jsp" />
+    </definition>
+
 </tiles-definitions>

@@ -67,7 +67,7 @@ public class DoctorController {
 
         if (!result.hasErrors()) {
             try {
-                bacSi.setImage("vidu");
+                bacSi.setImage(path);
                 iBacSiService.insert(bacSi);
                 return "redirect:/doctors/";
             }

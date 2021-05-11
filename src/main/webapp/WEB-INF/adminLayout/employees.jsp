@@ -51,9 +51,9 @@
 <%--                            </sec:authorize>--%>
                             <div class="el-card-content">
                                 <h3 class="box-title"> ${d.ho} ${d.ten}</h3>
-                                <small>Điện thoại: ${d.dienThoai}</small>
+                                <small>Phone: ${d.dienThoai}</small>
 <%--                                <br/> <small>Email: ${d.email}</small>--%>
-                                <br/> <small>Tài khoản: ${d.taiKhoan.username}</small>
+                                <br/> <small>Account: ${d.taiKhoan.username}</small>
                             </div>
                         </div>
                     </div>

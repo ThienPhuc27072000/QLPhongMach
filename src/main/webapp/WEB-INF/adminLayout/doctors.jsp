@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
-<%--<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>--%>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <div id="page-wrapper">
     <div class="container-fluid">
@@ -30,20 +30,22 @@
                                         <li><a class="btn default btn-outline image-popup-vertical-fit"
                                                href="/resourceAdmin/plugins/images/users/medicine.png"><i class="icon-magnifier"></i></a>
                                         </li>
-                                        <li>
-                                            <a class="btn default btn-outline" href="/doctors/edit-doctor?id=${d.id}"><i class="icon-link"></i></a>
-                                        </li>
-                                        <li>
-                                            <a class="btn default btn-outline" href="javascript:;" onclick="xoaBS('${d.id}')"><i class="far fa-trash-alt"></i></a>
-                                        </li>
+                                        <sec:authorize access="hasAnyRole('ROLE_ADMIN')">
+                                            <li>
+                                                <a class="btn default btn-outline" href="/doctors/edit-doctor?id=${d.id}"><i class="icon-link"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="btn default btn-outline" href="javascript:;" onclick="xoaBS('${d.id}')"><i class="far fa-trash-alt"></i></a>
+                                            </li>
+                                        </sec:authorize>
                                     </ul>
                                 </div>
                             </div>
                             <div class="el-card-content">
                                 <h3 class="box-title"> ${d.ho} ${d.ten}</h3>
-                                <small>Điện thoại: ${d.dienThoai}</small>
+                                <small>Phone: ${d.dienThoai}</small>
                                 <br/> <small>Email: ${d.email}</small>
-                                <br/> <small>Tài khoản: ${d.taiKhoan.username}</small>
+                                <br/> <small>Account: ${d.taiKhoan.username}</small>
                             </div>
                         </div>
                     </div>
@@ -52,6 +54,7 @@
         </div>
     </div>
 </div>
+
 
 <script>
     function xoaBS(id) {

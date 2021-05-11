@@ -42,10 +42,17 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/").permitAll()
                 .antMatchers("/admin").access("hasAnyRole('ROLE_ADMIN', 'ROLE_BACSI', 'ROLE_NHANVIEN')")
-                .antMatchers("/doctors/**").access("hasAnyRole('ROLE_ADMIN','ROLE_BACSI', 'ROLE_NHANVIEN')")
-                .antMatchers("/patients/**").access("hasAnyRole('ROLE_ADMIN', 'ROLE_BACSI', 'ROLE_NHANVIEN')")
-                .antMatchers("/medicines/**").access("hasAnyRole('ROLE_ADMIN', 'ROLE_BACSI', 'ROLE_NHANVIEN')")
-                .antMatchers("/employees/**").access("hasAnyRole('ROLE_ADMIN', 'ROLE_BACSI', 'ROLE_NHANVIEN')");
+                .antMatchers("/doctors/").access("hasAnyRole('ROLE_ADMIN','ROLE_BACSI', 'ROLE_NHANVIEN')")
+                .antMatchers("/patients/").access("hasAnyRole('ROLE_ADMIN', 'ROLE_BACSI', 'ROLE_NHANVIEN')")
+                .antMatchers("/medicines/").access("hasAnyRole('ROLE_ADMIN', 'ROLE_BACSI', 'ROLE_NHANVIEN')")
+                .antMatchers("/employees/").access("hasAnyRole('ROLE_ADMIN', 'ROLE_BACSI', 'ROLE_NHANVIEN')")
+                .antMatchers("/prescriptions/").access("hasAnyRole('ROLE_ADMIN', 'ROLE_BACSI', 'ROLE_NHANVIEN')")
+
+                .antMatchers("/doctors/**").access("hasAnyRole('ROLE_ADMIN')")
+                .antMatchers("/patients/**").access("hasAnyRole('ROLE_ADMIN')")
+                .antMatchers("/medicines/**").access("hasAnyRole('ROLE_ADMIN')")
+                .antMatchers("/employees/**").access("hasAnyRole('ROLE_ADMIN')")
+                .antMatchers("/prescriptions/**").access("hasAnyRole('ROLE_ADMIN')");
         http.csrf().disable();
     }
 }

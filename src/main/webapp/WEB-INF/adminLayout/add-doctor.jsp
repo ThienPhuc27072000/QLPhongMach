@@ -24,7 +24,8 @@
                 <div class="col-sm-12">
                     <div class="white-box">
                         <h3 class="box-title">Basic Information</h3>
-                        <form:form modelAttribute="doctor" method="post" cssClass="form-material form-horizontal">
+                        <form:form modelAttribute="doctor" method="post" cssClass="form-material form-horizontal"
+                        enctype="multipart/form-data">
                             <form:errors path="*" cssClass="alert alert-danger" element="div"/>
                             <div class="form-group">
                                 <label class="col-md-12" for="example-text">Name</span>

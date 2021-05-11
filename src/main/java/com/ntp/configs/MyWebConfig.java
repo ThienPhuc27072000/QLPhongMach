@@ -1,7 +1,6 @@
 package com.ntp.configs;
 
-import com.ntp.formatters.BacSiFormatter;
-import com.ntp.formatters.TaiKhoanFormatter;
+import com.ntp.formatters.*;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -41,6 +40,10 @@ public class MyWebConfig implements WebMvcConfigurer {
     public void addFormatters(FormatterRegistry registry) {
         registry.addFormatter(new TaiKhoanFormatter());
         registry.addFormatter(new BacSiFormatter());
+        registry.addFormatter(new ThuocFormatter());
+        registry.addFormatter(new ToaThuocFormatter());
+        registry.addFormatter(new BenhNhanFormatter());
+        registry.addFormatter(new LoaiBenhFormatter());
     }
 
     @Bean
