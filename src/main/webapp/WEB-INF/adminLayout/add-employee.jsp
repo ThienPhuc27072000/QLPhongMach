@@ -27,7 +27,8 @@
                 <div class="col-sm-12">
                     <div class="white-box">
                         <h3 class="box-title">Basic Information</h3>
-                        <form:form modelAttribute="employee" method="post" cssClass="form-material form-horizontal">
+                        <form:form modelAttribute="employee" method="post" cssClass="form-material form-horizontal"
+                                   enctype="multipart/form-data">
                             <form:errors path="*" cssClass="alert alert-danger" element="div"/>
                             <div class="form-group">
                                 <label class="col-md-12" for="example-text">Name</span>
@@ -78,7 +79,7 @@
                                         <span class="input-group-addon btn btn-default btn-file">
                                             <span class="fileinput-new">Select file</span>
                                             <span class="fileinput-exists">Change</span>
-                                            <form:input type="file" name="..." path="image"/>
+                                            <form:input type="file" name="... " path="img"/>
                                         </span>
                                         <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                                     </div>

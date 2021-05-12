@@ -203,4 +203,14 @@
         <put-attribute name="content" value="/WEB-INF/adminLayout/add-account.jsp" />
     </definition>
 
+    <!-- Invoice -->
+    <definition name="invoices" extends="adminBaseLayout">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="content" value="/WEB-INF/adminLayout/invoices.jsp"/>
+    </definition>
+    <definition name="add-invoice" extends="adminBaseLayout">
+        <put-attribute name="title" value=""/>
+        <put-attribute name="content" value="/WEB-INF/adminLayout/add-invoice.jsp"/>
+    </definition>
+
 </tiles-definitions>

@@ -1,6 +1,8 @@
 package com.ntp.models;
 
 
+import org.springframework.web.multipart.MultipartFile;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -26,6 +28,8 @@ public class NhanVien implements Serializable {
 //    private String email;
     @Column(name = "Image")
     private String image;
+    @Transient
+    private MultipartFile img;
     @OneToOne
     @MapsId
     @JoinColumn(name = "id")
@@ -102,5 +106,14 @@ public class NhanVien implements Serializable {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+
+    public MultipartFile getImg() {
+        return img;
+    }
+
+    public void setImg(MultipartFile img) {
+        this.img = img;
     }
 }

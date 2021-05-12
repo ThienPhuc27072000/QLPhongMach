@@ -3,9 +3,11 @@ package com.ntp.controllers;
 import com.cloudinary.utils.ObjectUtils;
 import com.ntp.models.BacSi;
 import com.ntp.models.BenhNhan;
+import com.ntp.models.Role;
 import com.ntp.models.TaiKhoan;
 import com.ntp.service.IBacSiService;
 import com.ntp.service.INhanVienService;
+import com.ntp.service.IRoleService;
 import com.ntp.service.ITaiKhoanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -34,6 +36,8 @@ public class AccountController {
 
     @Autowired
     ITaiKhoanService iTaiKhoanService;
+    @Autowired
+    IRoleService iRoleService;
 
     @Autowired
     BCryptPasswordEncoder cryptPasswordEncoder;
@@ -47,6 +51,7 @@ public class AccountController {
 
     @GetMapping("/add-account")
     public String addAccount(Model model) {
+        model.addAttribute("role", iRoleService.getAll(Role.class));
         model.addAttribute("account", new TaiKhoan());
         return "add-account";
     }
