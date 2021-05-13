@@ -29,28 +29,28 @@
                     <h3 class="box-title">Basic Information</h3>
                     <form:form modelAttribute="medicine" method="post" cssClass="form-material form-horizontal">
                         <div class="form-group">
-                            <label class="col-md-12" for="tenThuoc">Tên thuốc</span>
+                            <label class="col-md-12" for="tenThuoc">Medinine name</span>
                             </label>
                             <div class="col-md-12">
                                 <form:input path="tenThuoc" cssClass="form-control" />
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-md-12" for="moTa">Mô tả</span>
+                            <label class="col-md-12" for="moTa">Description</span>
                             </label>
                             <div class="col-md-12">
                                 <form:input path="moTa" cssClass="form-control" />
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-md-12" for="donGia">Đơn giá</span>
+                            <label class="col-md-12" for="donGia">Price</span>
                             </label>
                             <div class="col-md-12">
                                 <form:input path="donGia" cssClass="form-control" />
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-md-12" for="donVi">Đơn vị</span>
+                            <label class="col-md-12" for="donVi">Unit</span>
                             </label>
                             <div class="col-md-12">
                                 <form:input path="donVi" cssClass="form-control" />

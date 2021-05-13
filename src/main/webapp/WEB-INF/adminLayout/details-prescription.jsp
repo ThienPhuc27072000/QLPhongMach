@@ -19,14 +19,6 @@
                     <li class="active"><a href="/prescriptions/add-prescription">Add Prescription</a></li>
                 </ol>
             </div>
-            <!-- /.col-lg-12 -->
-            <%--<form action="/prescription/search">--%>
-            <%--    <label btn-lg>Tìm kiếm</label>--%>
-            <%--    <input id="hotenBN" name="BN" type="text"--%>
-            <%--           class="form-control"placeholder="Nhập họ tên Bệnh nhân">--%>
-            <%--    <br/>--%>
-            <%--        <input class="form-control btn btn-info text-light " type="submit" value="tìm">--%>
-            <%--</form>--%>
         </div>
         <!-- .row -->
         <div class="row bg-title form-group ">

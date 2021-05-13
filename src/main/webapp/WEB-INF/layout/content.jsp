@@ -209,13 +209,6 @@
                                         <div class="form-group">
                                             <form:input path="gioiTinh" placeholder="Gender"  />
                                         </div>
-                                        <div class="form-group">
-                                            <form:select path="caKham">
-                                                <c:forEach items="${shifts}" var="s">
-                                                    <form:option value="${s.id}">${s.tenCa}</form:option>
-                                                </c:forEach>
-                                            </form:select>
-                                        </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group">
@@ -236,43 +229,22 @@
                                             </form:select>
                                         </div>
                                         <div class="form-group">
+                                            <form:select path="caKham">
+                                                <c:forEach items="${shifts}" var="s">
+                                                    <form:option value="${s.id}">${s.tenCa}_ ${s.moTa}</form:option>
+                                                </c:forEach>
+                                            </form:select>
+                                        </div>
+                                        <div class="form-group">
                                             <form:select path="loaiBenh">
                                                 <c:forEach items="${diseases}" var="d">
                                                     <form:option value="${d.id}">${d.tenBenh}</form:option>
                                                 </c:forEach>
                                             </form:select>
                                         </div>
+
                                     </div>
                                 </div>
-<%--                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">--%>
-<%--                                    <div class="row">--%>
-<%--                                        <div class="form-group">--%>
-<%--                                            <input type="email" placeholder="Email Address" id="email" />--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-<%--                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-section">--%>
-<%--                                    <div class="row">--%>
-<%--                                        <div class="form-group">--%>
-<%--                                            <select class="form-control">--%>
-<%--                                                <option>SunDay</option>--%>
-<%--                                                <option>Monday</option>--%>
-<%--                                                <option>Tuesday</option>--%>
-<%--                                                <option>Wednesday</option>--%>
-<%--                                                <option>Thursday</option>--%>
-<%--                                                <option>Friday</option>--%>
-<%--                                                <option>Satuday</option>--%>
-<%--                                            </select>--%>
-<%--                                        </div>--%>
-<%--                                        <div class="form-group">--%>
-<%--                                            <select class="form-control">--%>
-<%--                                                <option>Time</option>--%>
-<%--                                                <option>AM</option>--%>
-<%--                                                <option>PM</option>--%>
-<%--                                            </select>--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="row">
                                         <div class="form-group">

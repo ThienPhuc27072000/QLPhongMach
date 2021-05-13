@@ -55,45 +55,6 @@
                 </div>
             </div>
         </div>
-        <%--        <div class="row">--%>
-        <%--            <div class="col-sm-6">--%>
-        <%--                <div class="white-box">--%>
-        <%--                    <h3 class="box-title">Thông tin tài khoản</h3>--%>
-        <%--                    <form class="form-material form-horizontal">--%>
-        <%--                        <div class="form-group">--%>
-        <%--                            <label class="col-md-12" for="example-email">Email</span>--%>
-        <%--                            </label>--%>
-        <%--                            <div class="col-md-12">--%>
-        <%--                                <input type="email" id="example-email" name="example-email" class="form-control"--%>
-        <%--                                       placeholder="nhập email"></div>--%>
-        <%--                        </div>--%>
-        <%--                        <div class="form-group">--%>
-        <%--                            <label class="col-md-12" for="example-phone">Số điện thoại</span>--%>
-        <%--                            </label>--%>
-        <%--                            <div class="col-md-12">--%>
-        <%--                                <input type="text" id="example-phone" name="example-phone" class="form-control"--%>
-        <%--                                       placeholder="nhập số điện thoại" data-mask="(999) 999-9999"></div>--%>
-        <%--                        </div>--%>
-        <%--                        <div class="form-group">--%>
-        <%--                            <label class="col-md-12" for="pwd">Mật khẩu</span>--%>
-        <%--                            </label>--%>
-        <%--                            <div class="col-md-12">--%>
-        <%--                                <input type="password" id="pwd" name="pwd" class="form-control"--%>
-        <%--                                       placeholder="nhập mật khẩu"></div>--%>
-        <%--                        </div>--%>
-        <%--                        <div class="form-group">--%>
-        <%--                            <label class="col-md-12" for="cpwd">Xác nhận mật khẩu</span>--%>
-        <%--                            </label>--%>
-        <%--                            <div class="col-md-12">--%>
-        <%--                                <input type="password" id="cpwd" name="cpwd" class="form-control"--%>
-        <%--                                       placeholder="nhập lại mật khẩu"></div>--%>
-        <%--                        </div>--%>
-        <%--                        <button type="submit" class="btn btn-info waves-effect waves-light m-r-10">Thêm</button>--%>
-        <%--                        <button type="submit" class="btn btn-inverse waves-effect waves-light">Hủy</button>--%>
-        <%--                    </form>--%>
-        <%--                </div>--%>
-        <%--            </div>--%>
-        <%--        </div>--%>
     </div>
 </div>
 

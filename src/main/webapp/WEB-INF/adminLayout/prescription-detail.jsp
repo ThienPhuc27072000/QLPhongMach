@@ -9,17 +9,11 @@
         <h4 class="text-center text-primary">Thong tin toa thuoc</h4>
         <table class="table table-bordered">
             <thead>
-            <th>
-            ID
-            </th>
-            <th>Bac si
-
-            <th>Benh nhan
-            </th>
-            <th>Ngay ke toa
-            </th>
-            <th>Loai benh
-            </th>
+            <th>ID</th>
+            <th>Doctor</th>
+            <th>Patient</th>
+            <th>Date</th>
+            <th>Type Disease</th>
             </thead>
             <tbody>
             <tr>

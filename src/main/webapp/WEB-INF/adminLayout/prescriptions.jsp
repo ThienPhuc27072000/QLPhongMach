@@ -30,7 +30,7 @@
                     <th scope="col">Patient</th>
                     <th scope="col">Prescription date</th>
                     <th scope="col">Disease</th>
-                    <th class="text-right">Hành vi</th>
+<%--                    <th class="text-right">Hành vi</th>--%>
                 </tr>
                 </thead>
                 <tbody>
@@ -41,11 +41,11 @@
                         <td>${e.benhNhan.ten}</td>
                         <td>${e.ngayKeToa}</td>
                         <td>${e.loaiBenh.tenBenh}</td>
-                        <td>
-                            <a class="btn btn-info" style="padding-left: 5%" href="#"><i class="far fa-edit"></i></a>
-                            <a class="btn btn-primary" style="padding-left: 5%" href="#"><i class="far fa-edit"></i></a>
-                            <%--<a class="btn btn-danger"  style="padding-left: 5%" href="javascript:;" onclick="xoaToaThuoc('${e.id}')" ><i class="far fa-trash-alt"></i></a>--%>
-                        </td>
+<%--                        <td>--%>
+<%--                            <a class="btn btn-info" style="padding-left: 5%" href="#"><i class="far fa-edit"></i></a>--%>
+<%--                            <a class="btn btn-primary" style="padding-left: 5%" href="#"><i class="far fa-edit"></i></a>--%>
+<%--                            <a class="btn btn-danger"  style="padding-left: 5%" href="javascript:;" onclick="xoaToaThuoc('${e.id}')" ><i class="far fa-trash-alt"></i></a>--%>
+<%--                        </td>--%>
                     </tr>
                 </c:forEach>
                 </tbody>

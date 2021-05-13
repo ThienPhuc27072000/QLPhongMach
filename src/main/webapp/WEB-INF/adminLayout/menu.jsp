@@ -78,28 +78,6 @@
                     </sec:authorize>
                 </ul>
             </li>
-            <li> <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-file-invoice-dollar"></i>
-                <span class="hide-menu"> Invoice <span class="fa arrow"></span></span></a>
-                <ul class="nav nav/re-second-level collapse">
-                    <li> <a href="/invoices/">List Invoice</a></li>
-                    <li> <a href="/invoices/add-invoice">Add Invoice</a></li>
-                </ul>
-            </li>
-            <li> <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-envelope-open-text"></i>
-                <span class="hide-menu"> Report <span class="fa arrow"></span></span></a>
-                <ul class="nav nav/re-second-level collapse">
-                    <li> <a href="/report/payment-report">Báo cáo thanh toán</a></li>
-                    <li> <a href="/report/income-report">Báo cáo thu nhập</a></li>
-                </ul>
-            </li>
-            <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-inr p-r-5"></i>
-                <span class="hide-menu"> Payment <span class="fa arrow"></span></span></a>
-                <ul class="nav nav-second-level collapse">
-                    <li> <a href="/payment/">Payment</a></li>
-                    <li> <a href="/payment/add-payment">Add payment</a></li>
-                    <li> <a href="/payment/patient-invoice">Hóa đơn bệnh nhân</a></li>
-                </ul>
-            </li>
             <li> <a href="javascript:void(0);" class="waves-effect"><i class="far fa-list-alt"></i>
                 <span class="hide-menu"> Prescription <span class="fa arrow"></span></span></a>
                 <ul class="nav nav-second-level collapse">
@@ -107,13 +85,35 @@
                     <sec:authorize access="hasAnyRole('ROLE_ADMIN')">
                         <li> <a href="/prescriptions/add-prescription">Add prescription </a></li>
                     </sec:authorize>
-<%--                    <li> <a href="/prescriptions">Chi tiết toa thuốc</a></li>--%>
-<%--                    <li> <a href="/prescriptions">Chỉnh sửa chi tiết toa thuốc </a></li>--%>
+                    <%--                    <li> <a href="/prescriptions">Chi tiết toa thuốc</a></li>--%>
+                    <%--                    <li> <a href="/prescriptions">Chỉnh sửa chi tiết toa thuốc </a></li>--%>
+                </ul>
+            </li>
+            <li> <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-file-invoice-dollar"></i>
+                <span class="hide-menu"> Invoice <span class="fa arrow"></span></span></a>
+                <ul class="nav nav/re-second-level collapse">
+                    <li> <a href="/invoices/">List Invoice</a></li>
+                    <li> <a href="/invoices/add-invoice">Add Invoice</a></li>
                 </ul>
             </li>
             <li> <a href="/accounts"><i class="fas fa-user-circle"></i>
                 <span class="hide-menu"> Account<span class="fa arrow"></span></span></a>
             </li>
+            <%--            <li> <a href="javascript:void(0);" class="waves-effect"><i class="fas fa-envelope-open-text"></i>--%>
+            <%--                <span class="hide-menu"> Report <span class="fa arrow"></span></span></a>--%>
+            <%--                <ul class="nav nav/re-second-level collapse">--%>
+            <%--                    <li> <a href="/report/payment-report">Báo cáo thanh toán</a></li>--%>
+            <%--                    <li> <a href="/report/income-report">Báo cáo thu nhập</a></li>--%>
+            <%--                </ul>--%>
+            <%--            </li>--%>
+            <%--            <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-inr p-r-5"></i>--%>
+            <%--                <span class="hide-menu"> Payment <span class="fa arrow"></span></span></a>--%>
+            <%--                <ul class="nav nav-second-level collapse">--%>
+            <%--                    <li> <a href="/payment/">Payment</a></li>--%>
+            <%--                    <li> <a href="/payment/add-payment">Add payment</a></li>--%>
+            <%--                    <li> <a href="/payment/patient-invoice">Hóa đơn bệnh nhân</a></li>--%>
+            <%--                </ul>--%>
+            <%--            </li>--%>
             <li>
                 <a href="/logout" class="waves-effect">
                     <i class="fas fa-sign-out-alt"></i>
