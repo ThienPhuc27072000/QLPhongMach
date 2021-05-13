@@ -59,6 +59,7 @@ public class AccountController {
     @PostMapping("/add-account")
     public String addAccountPost(@ModelAttribute("account")TaiKhoan taiKhoan) {
         taiKhoan.setId(UUID.randomUUID().toString());
+        System.out.println(taiKhoan.getUsername());
         TaiKhoan t = iTaiKhoanService.insert(taiKhoan);
         if (t != null)
             return "redirect:/accounts/";

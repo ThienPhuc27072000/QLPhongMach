@@ -29,7 +29,7 @@
                         <div class="el-card-item">
 <%--                            <sec:authorize access="hasAnyRole('ROLE_ADMIN')">--%>
                                 <div class="el-card-avatar el-overlay-1">
-                                    <img src="/resourceAdmin/plugins/images/users/2.jpg" />
+                                    <img src="${d.image}" />
                                     <div class="el-overlay">
                                         <ul class="el-info">
                                             <li><a class="btn default btn-outline image-popup-vertical-fit"

@@ -100,7 +100,7 @@
                     <li> <a href="/payment/patient-invoice">Hóa đơn bệnh nhân</a></li>
                 </ul>
             </li>
-            <li> <a href="javascript:void(0);" class="waves-effect"><i class="far fa-list-alt"></i></i>
+            <li> <a href="javascript:void(0);" class="waves-effect"><i class="far fa-list-alt"></i>
                 <span class="hide-menu"> Prescription <span class="fa arrow"></span></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li> <a href="/prescriptions">List prescription </a></li>
@@ -111,9 +111,9 @@
 <%--                    <li> <a href="/prescriptions">Chỉnh sửa chi tiết toa thuốc </a></li>--%>
                 </ul>
             </li>
-<%--            <li> <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-inr p-r-5"></i>--%>
-<%--                <span class="hide-menu"> Tài khoản <span class="fa arrow"></span></span></a>--%>
-<%--            </li>--%>
+            <li> <a href="/accounts"><i class="fas fa-user-circle"></i>
+                <span class="hide-menu"> Account<span class="fa arrow"></span></span></a>
+            </li>
             <li>
                 <a href="/logout" class="waves-effect">
                     <i class="fas fa-sign-out-alt"></i>

@@ -189,51 +189,90 @@
                 <div class="appointment-form">
                     <h3><span>+</span> Book Appointment</h3>
                     <div class="form">
-                        <form action="index.html">
+                        <form:form modelAttribute="appointment" method="post">
+                            <form:errors path="*" cssClass="alert alert-danger" element="div"/>
                             <fieldset>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<%--                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">--%>
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-section">
                                     <div class="row">
                                         <div class="form-group">
-                                            <input type="text" id="name" placeholder="Your Name"  />
+                                            <form:input path="ten" placeholder="Name"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <form:input path="ho" placeholder="Last Name"  />
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="row">
                                         <div class="form-group">
-                                            <input type="email" placeholder="Email Address" id="email" />
+                                            <form:input path="ngaySinh" placeholder="Birthday"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <form:input path="gioiTinh" placeholder="Gender"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <form:select path="caKham">
+                                                <c:forEach items="${shifts}" var="s">
+                                                    <form:option value="${s.id}">${s.tenCa}</form:option>
+                                                </c:forEach>
+                                            </form:select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <form:input path="dienThoai" placeholder="Phone"  />
+                                        </div>
+                                        <div class="form-group">
+                                            <form:input path="ngayKham" placeholder="Date"  />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-section">
                                     <div class="row">
                                         <div class="form-group">
-                                            <select class="form-control">
-                                                <option>Day</option>
-                                                <option>Sunday</option>
-                                                <option>Monday</option>
-                                            </select>
+                                            <form:select path="bacSi">
+                                                <c:forEach items="${doctors}" var="d">
+                                                    <form:option value="${d.id}">${d.ten}</form:option>
+                                                </c:forEach>
+                                            </form:select>
                                         </div>
                                         <div class="form-group">
-                                            <select class="form-control">
-                                                <option>Time</option>
-                                                <option>AM</option>
-                                                <option>PM</option>
-                                            </select>
+                                            <form:select path="loaiBenh">
+                                                <c:forEach items="${diseases}" var="d">
+                                                    <form:option value="${d.id}">${d.tenBenh}</form:option>
+                                                </c:forEach>
+                                            </form:select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="row">
-                                        <div class="form-group">
-                                            <select class="form-control">
-                                                <option>Doctor Name</option>
-                                                <option>Mr.XYZ</option>
-                                                <option>Mr.ABC</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+<%--                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">--%>
+<%--                                    <div class="row">--%>
+<%--                                        <div class="form-group">--%>
+<%--                                            <input type="email" placeholder="Email Address" id="email" />--%>
+<%--                                        </div>--%>
+<%--                                    </div>--%>
+<%--                                </div>--%>
+<%--                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 select-section">--%>
+<%--                                    <div class="row">--%>
+<%--                                        <div class="form-group">--%>
+<%--                                            <select class="form-control">--%>
+<%--                                                <option>SunDay</option>--%>
+<%--                                                <option>Monday</option>--%>
+<%--                                                <option>Tuesday</option>--%>
+<%--                                                <option>Wednesday</option>--%>
+<%--                                                <option>Thursday</option>--%>
+<%--                                                <option>Friday</option>--%>
+<%--                                                <option>Satuday</option>--%>
+<%--                                            </select>--%>
+<%--                                        </div>--%>
+<%--                                        <div class="form-group">--%>
+<%--                                            <select class="form-control">--%>
+<%--                                                <option>Time</option>--%>
+<%--                                                <option>AM</option>--%>
+<%--                                                <option>PM</option>--%>
+<%--                                            </select>--%>
+<%--                                        </div>--%>
+<%--                                    </div>--%>
+<%--                                </div>--%>
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="row">
                                         <div class="form-group">
@@ -249,7 +288,7 @@
                                     </div>
                                 </div>
                             </fieldset>
-                        </form>
+                        </form:form>
                     </div>
                 </div>
             </div>

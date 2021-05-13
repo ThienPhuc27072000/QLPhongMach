@@ -46,6 +46,7 @@ public class MyWebConfig implements WebMvcConfigurer {
         registry.addFormatter(new LoaiBenhFormatter());
         registry.addFormatter(new RoleFormatter());
         registry.addFormatter(new NhanVienFormatter());
+        registry.addFormatter(new CaKhamBenhFormatter());
     }
 
     @Bean

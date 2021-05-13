@@ -9,7 +9,7 @@ import java.util.Set;
 @Table(name = "phieukhambenh")
 public class PhieuKhamBenh implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
     @Column(name = "NgayKham")

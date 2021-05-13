@@ -19,7 +19,7 @@
                     </a>
                     <ol class="breadcrumb">
                         <li>Hospital</li>
-                        <li class="active"><a href="/prescriptions/add-prescription">Add Invoice</a></li>
+                        <li class="active"><a href="/invoices/add-invoice">Add Invoice</a></li>
                     </ol>
                 </div>
             </div>

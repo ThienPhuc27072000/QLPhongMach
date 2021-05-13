@@ -4,6 +4,9 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 
+<div class="preloader">
+    <div class="cssload-speeding-wheel"></div>
+</div>
     <!-- Page Content -->
     <div id="page-wrapper">
 <%--        <div class="container-fluitrongd">--%>
@@ -29,7 +32,7 @@
                     <div id="${d.id}" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                         <div class="white-box">
                             <div class="el-card-item">
-                                <div class="el-card-avatar el-overlay-1"> <img src="/resourceAdmin/plugins/images/users/1.jpg" />
+                                <div class="el-card-avatar el-overlay-1"> <img src="/resourceAdmin/plugins/images/users/6.jpg" />
                                     <div class="el-overlay">
                                         <ul class="el-info">
                                             <li><a class="btn default btn-outline image-popup-vertical-fit"
@@ -60,7 +63,7 @@
 
 <script>
     function xoaBN(id) {
-        if (confirm("Ban co muon xoa khong?")) {
+        if (confirm("Do you want to delete?")) {
             fetch("/patients/delete/" + id, {
                 method:"POST",
                 headers:{
