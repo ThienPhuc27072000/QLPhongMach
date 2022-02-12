@@ -76,21 +76,6 @@ public class EmployeeController {
         return "add-employee";
     }
 
-//    @PostMapping("/add-employee")
-//    public String addEmployeeProcess(@ModelAttribute("employee") @Valid NhanVien nhanVien, BindingResult result) {
-//        if (!result.hasErrors()) {
-//            try {
-//                nhanVien.setImage("vidu");
-//                iNhanVienService.insert(nhanVien);
-//                return "redirect:/employees/";
-//            }
-//            catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        return "add-employee";
-//    }
-
     @GetMapping("/edit-employee")
     public String EmployeeEdit(@RequestParam("id")String id, Model model) {
         NhanVien nhanVien = iNhanVienService.getById(NhanVien.class, id);
